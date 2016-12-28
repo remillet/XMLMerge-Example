@@ -67,16 +67,25 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>            
-        </repository>		<repository>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<id>el4jReleaseRepositoryExternal</id>
-			<name>External release repository of the EL4J project</name>
-			<url>http://public-el4.elca-services.ch/el4j/maven2repository</url>
-		</repository>
+        </repository>
+	<repository>
+            <id>libs-release-local</id>
+            <name>libs-release-local</name>
+            <url>http://source.collectionspace.org:8081/artifactory/libs-release-local</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+	<repository>
+		<snapshots>
+			<enabled>false</enabled>
+		</snapshots>
+		<releases>
+			<enabled>true</enabled>
+		</releases>
+		<id>el4jReleaseRepositoryExternal</id>
+		<name>External release repository of the EL4J project</name>
+		<url>http://public-el4.elca-services.ch/el4j/maven2repository</url>
+	</repository>
 	</repositories>
 </project>
